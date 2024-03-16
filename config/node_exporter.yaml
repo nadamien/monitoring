@@ -1,0 +1,4 @@
+ # Example job for node_exporter
+  - job_name: 'monitoring'
+    static_configs:
+      - targets: ['node_exporter:9100']

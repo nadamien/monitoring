@@ -4,8 +4,7 @@ volumes:
   prometheus-data:
     driver: local
   grafana-data:
-    driver: local
-    
+    driver: local 
 services:
   prometheus:
     image: prom/prometheus:latest
@@ -18,7 +17,7 @@ services:
     restart: unless-stopped
     command: 
       - "--config.file=/etc/prometheus/prometheus.yaml"
-         
+
   grafana:
     image: docker.io/grafana/grafana-oss:10.4.0
     container_name: grafana
